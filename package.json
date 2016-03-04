@@ -30,5 +30,8 @@
   "bugs": {
     "url": "https://github.com/tiniest/furied/issues"
   },
-  "homepage": "https://github.com/tiniest/furied#readme"
+  "homepage": "https://github.com/tiniest/furied#readme",
+  "dependencies": {
+    "es6-promisify": "^3.0.0"
+  }
 }
