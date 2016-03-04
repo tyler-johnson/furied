@@ -14,7 +14,7 @@ const package = require(path.join(cwd, 'package.json'));
 
 // copied from https://github.com/npm/npm/blob/33ad728dfd7b81fcfd5b8ecc0609a582a4a57567/lib/pack.js#L51-L54
 // scoped packages get special treatment
-let name = package.name;
+var name = package.name;
 if (name[0] === '@') name = name.substr(1).replace(/\//g, '-');
 const file = name + '-' + package.version + '.tgz';
 
