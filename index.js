@@ -16,7 +16,7 @@ const package = require(path.join(cwd, 'package.json'));
 // scoped packages get special treatment
 let name = package.name;
 if (name[0] === '@') name = name.substr(1).replace(/\//g, '-');
-const file = name + '-' + data.version + '.tgz';
+const file = name + '-' + package.version + '.tgz';
 
 const options = { cwd };
 const pack = done => exec('npm pack', options, done);
